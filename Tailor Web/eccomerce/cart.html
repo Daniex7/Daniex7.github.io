@@ -1,0 +1,255 @@
+<html>
+ <head>
+  <title>
+   Shopping Cart
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .table th {
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+        .table td {
+            font-size: 1rem;
+        }
+        .table td img {
+            width: 50px;
+            height: auto;
+        }
+        .table td .price, .table td .total {
+            font-weight: bold;
+            color: #000;
+        }
+        .table td .original-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 0.875rem;
+        }
+        .btn-update {
+            background-color: #f8f9fa;
+            border: 1px solid #6c757d;
+            color: #6c757d;
+        }
+        .btn-update:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .btn-checkout {
+            background-color: #000;
+            color: #fff;
+        }
+        .btn-checkout:hover {
+            background-color: #333;
+            color: white;
+        }
+        .note {
+            margin-top: 20px;
+        }
+        .note textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ced4da;
+            padding: 10px;
+        }
+        .actions {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+        }
+  </style>
+ </head>
+ <body class=" bg-light ">
+
+    <nav class="navbar navbar navbar-expand-lg navbar-dark bg-dark pt-0" style="position: fixed; width: 100%; z-index: 10; top: 0;">
+        <div class="container mt-2 ">
+          <a class="navbar-brand" href="#">Royal Edith</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/wishlist">Wishlist</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/eccomerce/all.html">Shop</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid mt-3 pt-5">
+  <div class="container mb-3">
+   <h2 class="text-center">
+    Shopping Cart
+   </h2>
+   <table class="table table-bordered mt-4">
+    <thead>
+     <tr>
+      <th>
+       Item
+      </th>
+      <th>
+       Price
+      </th>
+      <th>
+       Quantity
+      </th>
+      <th>
+       Total
+      </th>
+      <th>
+       Remove
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       <div class="d-flex align-items-center">
+        <img alt="Image of Highball 29 bike" height="50" src="https://placehold.co/50x50" width="50"/>
+        <div class="ms-3">
+         <div>
+          Highball 29
+         </div>
+         <div class="text-muted">
+          29" / HT
+         </div>
+        </div>
+       </div>
+      </td>
+      <td>
+       <div class="price">
+        $500.25
+       </div>
+       <div class="original-price">
+        $650.00
+       </div>
+      </td>
+      <td>
+       <input class="form-control" type="number" value="1"/>
+      </td>
+      <td>
+       <div class="total">
+        $500.25
+       </div>
+      </td>
+      <td>
+       <button class="btn btn-link text-danger">
+        <i class="fas fa-times">
+        </i>
+       </button>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <div class="d-flex align-items-center">
+        <img alt="Image of Superlight Jackal bike" height="50" src="https://placehold.co/50x50" width="50"/>
+        <div class="ms-3">
+         <div>
+          Superlight Jackal
+         </div>
+         <div class="text-muted">
+          26.5" / 160MM (6")
+         </div>
+        </div>
+       </div>
+      </td>
+      <td>
+       <div class="price">
+        $600.50
+       </div>
+       <div class="original-price">
+        $650.00
+       </div>
+      </td>
+      <td>
+       <input class="form-control" type="number" value="1"/>
+      </td>
+      <td>
+       <div class="total">
+        $600.50
+       </div>
+      </td>
+      <td>
+       <button class="btn btn-link text-danger">
+        <i class="fas fa-times">
+        </i>
+       </button>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="text-end">
+    <button class="btn btn-update">
+     Update
+    </button>
+    <div class="total mt-2">
+     $1100.75
+    </div>
+   </div>
+   <div class="note">
+    <textarea placeholder="Add a note for this seller..."></textarea>
+   </div>
+   <div class="actions">
+    <button class="btn btn-secondary" id="continue-shopping">
+     Continue Shopping
+    </button>
+    <button class="btn btn-checkout" id="checkout">
+     Checkout
+    </button>
+   </div>
+   <!-- <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+     <li class="breadcrumb-item">
+      <a href="#">
+       Home
+      </a>
+     </li>
+     <li aria-current="page" class="breadcrumb-item active">
+      Shopping Cart
+     </li>
+    </ol>
+   </nav> -->
+  </div>
+</div>
+  <script>
+   document.getElementById('continue-shopping').addEventListener('click', function() {
+            window.location.href = 'all.html'; // Replace with the actual URL of the previous page
+        });
+
+        document.getElementById('checkout').addEventListener('click', function() {
+            window.location.href = 'checkout-page-url.html'; // Replace with the actual URL of the checkout page
+        });
+  </script>
+  <script src="./index.js"></script>
+ </body>
+</html>

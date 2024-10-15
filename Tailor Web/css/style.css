@@ -1,0 +1,281 @@
+ 
+ body{
+  background-color: #f1f1f1; 
+ }
+ .btn-orange  {
+      background-color: orange !important;
+      color: white !important;
+    }
+    .btn-orange:hover {
+      color: rgb(0, 0, 0) !important;
+      background-color: darkorange;
+    }
+.btn-outline-light:hover {
+  background-color: darkorange;
+  color: white; /* Change text color to white on hover */
+  border-color: darkorange; /* Match border color with background */
+}
+
+.btn-service{
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero-section {
+  background-image: url('../src/img/yasamine-june-iV08-pfH2NQ-unsplash.jpg'); /* Replace with an image of your tailoring work */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.87); /* Adds a darker overlay for text readability */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.services-section {
+  background-color: #f1f1f1; /* Light background to differentiate from the hero */
+}
+
+.service-card {
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.con1-3{
+        
+  align-items: center;
+      justify-content: center;
+      overflow: hidden;
+  min-height:10vh;
+  background-color: blueviolet;
+  border-radius: 30px;
+}
+.row-con2{
+align-items: center;
+}
+
+.coll-3{
+height: 100%;
+}
+.coll3-2{
+max-width: 500px;
+padding: 20px;
+/* background-color: azure; */
+
+}
+
+
+.coll-small{
+/* background-color: aqua; */
+color: #fff;
+
+min-height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 60px;
+}
+
+.img2-con{
+
+padding: 40px ;
+}
+.btn-hover {
+border: 1px solid antiquewhite;
+color: #fff;
+
+}
+
+.btn-hover:hover{
+background-color: #fff;
+
+color: black;
+
+
+}
+
+/* section 3 end */
+
+
+.con1-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            max-width: 800px;
+            max-height: 600px;
+            border-radius: 20px;
+             
+            
+        }
+
+        
+
+        .hovercon{
+            transition: transform 1s ease;
+
+            /* box-shadow: ; */
+            border-radius: 20px;
+        }
+
+        .display-con{
+            border-radius: 5px;
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5px;
+            
+        }
+
+        .display-6{
+            font-size: 30px;
+            font-weight: 600;
+            margin: 10px 0px ;
+            padding-bottom: 20px;
+            margin: 0;
+           
+        }
+       
+
+        .addon-1{
+            border: none;
+        }
+
+        .input-group4{
+            min-height: 200px;
+            overflow-y: hidden;
+        }
+
+
+        .form-con{
+            padding: 30px 25px;
+            
+        }
+
+
+
+        .btn-con{
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+        }
+        .btn-con #button{
+            color: black;
+           
+        }
+        .btn-con #button:hover{
+          color: white;
+           
+            scale: 105%;
+            transition: 0.5s ease;
+        }
+
+
+.footer {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem;
+        }
+        .footer a {
+            color: #fff;
+        }
+        .footer a:hover {
+            color:orange;
+        }
+
+
+
+/* eccomerce stylin all */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+.nav_ora{
+  background-color: orange;
+  color: white;
+ }
+ .nav_ora:hover{
+  background-color: orange;
+  color: rgb(0, 0, 0);
+ }
+.product-card {
+  border: none;
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-card .card-body {
+  padding: 0.5rem;
+}
+.product-card .card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.product-card .card-text {
+  color: #888;
+}
+.ora{
+ background-color: orange;
+ color: white;
+}
+.subscribe-section {
+  color: white;
+  background-color: #404041;
+  padding: 2rem;
+  text-align: center;
+}
+.subscribe-section input[type="email"] {
+  width: 300px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0;
+}
+.subscribe-section button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color:  #212529;
+  color: #fff;
+}
+.footer {
+  background-color:  #212529;
+  color: #fff;
+  padding: 2rem;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: orange;
+}
+
+
+
+
+

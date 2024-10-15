@@ -1,0 +1,495 @@
+      <!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+          <title>Bootstrap Example</title>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <link rel="stylesheet" href="./css/bootstrap.min.css">
+          <style>
+          
+              body{
+                  width: 100%;
+                  height: 100%;
+              }
+/* nav */
+
+.btn-orange {
+      background-color: orange;
+      color: white;
+    }
+    .btn-orange:hover {
+      background-color: darkorange;
+    }
+.btn-outline-light:hover {
+  background-color: darkorange;
+  color: white; /* Change text color to white on hover */
+  border-color: darkorange; /* Match border color with background */
+}
+              /*  */
+              .hero-section {
+  background-image: url('./first\ web\ design\ copy.jpg'); /* Replace with an image of your tailoring work */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adds a darker overlay for text readability */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+              /* .con1{
+                position: relative;
+                background-size: cover;
+                padding: 20px;
+              }  
+
+              .back-con{
+                position: absolute;
+                z-index: -1;
+                min-width: 100%;
+                background-color: blue;
+                height: 100%;
+                
+              }
+              .sm-con{
+                background-color: orange;
+                width: 100%;
+                height: 100%;
+              }
+              .img{
+                height: 100%;
+                width: 100%;
+                margin:0;
+              }
+          .con1-1{
+            /* min-width: 100%; *
+              display: flex;
+              align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+              min-height:inherit;
+                  
+          
+
+          }
+          .hero-con{
+              
+              min-height: inherit;
+              min-width: 100%;
+              min-height: 500px;
+            color: #fff;
+
+              
+
+
+          }
+          .col1{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction:column;
+              min-height: 100%;
+              /* background-color: blue; *
+              min-height: 100%;
+              
+
+          }
+          .col1 h2{
+              font-size: 3.5rem;
+
+              
+          }
+          .col1 p:nth-child(2){
+            font-size: 25px;
+            
+          }
+          .lead-con{
+            display: flex;
+            justify-content:  center;
+          }
+          .lead-con p{
+            font-size: 15px;
+            text-align: center;
+            max-width: 300px;
+            
+          }
+          
+
+          .col2{
+      height: 100vh;
+        position: relative;
+        /* background-color: gray; *
+          }
+
+          .col2 img{
+            position: absolute;
+            bottom: -50px;
+            left: 40px;
+          } */
+
+          /* section 2 start */
+        .con1-2{
+          display: flex;
+              align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+              min-height:90vh;
+              /* background-color: blue; */
+
+        }
+        .row-con{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+          .card{
+
+              position: relative;
+          }
+          .card:hover{
+            z-index: 4;
+          }
+          .card img{
+            min-height: 100%;
+            height: 400px;
+
+            
+          }
+        .card .card-body{
+          min-height: 100%;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          backdrop-filter: blur(5px);
+            color: #fff;
+           
+          opacity: 0;
+          
+        }
+
+        .card .card-body:hover{
+          transition: 0.5s ease;
+          opacity: 1;
+
+        }
+
+
+        .text-con{
+          margin-top: 50px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        .text-con .card-title{
+          margin-bottom: 30px;
+        }
+
+        /* section two end */
+          
+        .con1-3{
+        
+              align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+              min-height:10vh;
+              background-color: blueviolet;
+              border-radius: 30px;
+        }
+        .row-con2{
+          align-items: center;
+        }
+
+        .coll-3{
+          height: 100%;
+        }
+      .coll3-2{
+        max-width: 500px;
+        padding: 20px;
+        /* background-color: azure; */
+        margin-top: 10px;
+      }
+
+
+        .coll-small{
+          /* background-color: aqua; */
+            color: #fff;
+
+          min-height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 60px;
+        }
+
+        .img2-con{
+          
+          padding: 40px ;
+        }
+        .btn-hover {
+          border: 1px solid antiquewhite;
+            color: #fff;
+
+        }
+
+        .btn-hover:hover{
+          background-color: #fff;
+
+        color: black;
+        
+
+        }
+
+        /* section 3 end */
+
+        .footer {
+  
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: orange;
+}
+
+.footer-copyright {
+  background-color: #444;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+        
+          </style>
+        </head>
+        <body >
+    <nav class="navbar navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 10;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Royal Edith</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          
+          <li class="nav-item">
+            <a class="nav-link active " href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="/About.html">About Us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./eccomerce/all.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-orange" href="Appointment.html">Book a Fitting</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+          <!-- Example Code -->
+          
+          <section class="hero-section d-flex align-items-center justify-content-center" style="height: 100vh;">
+  <div class="container text-center text-white">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold">About Us</h1>
+        <p class="lead  my-4 " style="font-weight: 560;" >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quibusdam adipisci incidunt necessitatibus doloribus tempore expedita at iure non, qui culpa reprehenderit ab vero ex perferendis officiis et minus repellendus nostrum animi! Nesciunt, sit sed recusandae repudiandae neque natus distinctio.     z
+        </p>
+        </div>
+    </div>
+  </div>
+</section>
+         
+              <!-- section one end -->
+
+                      
+                        <div class="container text-center con1-2 ">
+
+                          <div class="row row-con g-2 px-3 px-sm-4 px-lg-0 px-xl-0 ms-sm-5 px-md-0 me-md-5 pe-md-5  " >
+                            
+                            <div class=" col-sm-12 col-md-6 col-12 col-lg-4">
+                              <div class="p-3">
+                                <div class="card" style="width: 20rem;">
+        <img src="./first web design copy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+              <div class="text-con">
+
+          <h5 class="card-title">Cut, Craft & Master.</h5>
+          <p class="card-text">Transforming threads into timeless masterpieces, one stitch at a time. <br> Our Fashion Design Academy will bring your Passion and dreams to reality</p>
+            </div>
+      <button class="btn btn-outline-secondary btn-hover ">
+                            Learn More
+                          </button>
+        </div>
+      </div>
+                              </div>
+                            </div>
+                            <div class=" col-sm-12 col-md-6 col-12 col-lg-4">
+                              <div class="p-3">
+                                <div class="card" style="width: 20rem;">
+        <img src="./first web design copy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+              <div class="text-con">
+
+          <h5 class="card-title">Measurement</h5>
+          <p class="card-text">Transforming threads into timeless masterpieces, one stitch at a time. <br> We measure our client with accuracy to fit their style</p>
+            </div>
+      <button class="btn . btn-outline-secondary btn-hover ">
+               <a href="index.html" style="text-decoration: none;" >            Contact Us</a> 
+                          </button>
+        </div>
+      </div>
+                              </div>
+                            </div>
+                            <div class=" col-sm-12 col-md-6 col-12 col-lg-4">
+                              <div class="p-3">
+                                <div class="card" style="width: 20rem;">
+        <img src="./first web design copy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+              <div class="text-con">
+
+          <h5 class="card-title">Ready Made</h5>
+          <p class="card-text">Visit Our Ready Made Designs in Showcase Store and Purchase Designs that suits your taste</p>
+            </div>
+            <button class="btn btn-outline-secondary btn-hover ">
+              Learn More
+            </button>
+        </div>
+      </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                  <!-- section 2 end  -->
+          
+
+              
+                <div class="container  con1-3 text-center">
+                    <div class="row bg-dark row-con2" style="min-height : 100%;">
+                      <div class="col coll-3 col-12 col-sm-12 col-md-12 col-lg-6">
+                      <div class="container img2-con">
+                        <img src="./about.jpg" alt="" class="img-fluid">
+                      </div>
+                      </div>
+                      <div class="col coll-3 col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="container coll-small  coll3-2">
+                          <h2 class="display-5 fw-bold">
+                            About Royal Edith <br> Fashion Designs
+                          </h2>
+                          <p>
+                            Welcome to Royal Edith Fashion Designs, where creativity knows no bounds and fashion meets artistry. Our store is a haven for fashion enthusiasts who crave unique, high-quality, and bespoke clothing that reflects their individual style.
+
+      <!-- <span class="lead fw-bold"><br> Our Story <br> </span>
+
+      Our journey began with a passion for fashion and a desire to create clothing that is not only beautiful but also tells a story. Our team of skilled designers and artisans work tirelessly to craft garments that are both functional and visually stunning.
+
+      <span class="lead fw-bold"> <br>Our Collections <br></span>
+
+      Our store features a curated selection of clothing and accessories for men and women-->
+                          </p> 
+                          <!-- <button class="btn btn-outline-secondary btn-hover ">
+                            Learn More
+                          </button> -->
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+            
+                  <!-- section 3 end  -->
+
+                  <footer class="footer bg-dark mt-5">
+                    <div class="container px-5 mt-4">
+                      <div class="row">
+                        <div class="col-md-4 mb-2">
+                          <h5>About Us</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                          <h5>Quick Links</h5>
+                          <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                          <h5>Follow Us</h5>
+                          <ul>
+                            <li><a href="https://www.facebook.com/yourfacebookpage" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/yourtwitterhandle" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/yourinstagramhandle/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/yourlinkedincompany" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.youtube.com/youryoutubechannel" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-copyright mt-3 ">
+                      <p>&copy; 2024 Royal Edith Fashion Designs. All rights reserved.</p>
+                    </div>
+                  </footer>
+
+
+
+                  <!-- section 4 end -->
+
+                  
+          <!-- End Example Code -->
+        </body>
+      </html>

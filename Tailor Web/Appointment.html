@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/style.css">
+     <style>
+
+        .con1{
+            background: url(./src/img/yasamine-june-iV08-pfH2NQ-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 110vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-left: 800px; */
+            position: relative;
+        }
+
+        .con1::before{
+          content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.87); /* Adds a darker overlay for text readability */
+  
+
+        }
+
+        .con1-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            max-width: 700px;
+            max-height: 500px;
+            background: radial-gradient(rgba(255, 255, 255, 0.76),rgba(0, 0, 0, 0.623));
+            border-radius: 20px;
+             
+            
+        }
+
+        
+
+        .hovercon{
+            transition: transform 1s ease;
+
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .hovercon:hover{
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(255, 166, 0, 0.137) 0px 25px 90px -25px;
+
+
+            transform: translateY(-20px);
+           
+            
+        }
+
+        .display-con{
+            border-radius:0px 0px 70% 70% ;
+            background-color: orange;
+            margin: 0 0 -10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5px;
+            
+        }
+
+        .display-6{
+            font-size: 30px;
+            font-weight: 600;
+            margin: 10px 0px ;
+            padding-bottom: 20px;
+            margin: 0;
+           
+        }
+       
+
+        .addon-1{
+            background: orange;
+            border: none;
+        }
+
+        .input-group4{
+            min-height: 200px;
+            overflow-y: hidden;
+        }
+
+
+        .form-con{
+            padding: 30px 25px;
+            
+        }
+
+        
+
+        .btn-con{
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+        }
+        .btn-con #button{
+            color: orange;
+            border-color: orange;
+            background-color: rgba(0, 0, 0, 0.356);
+        }
+        .btn-con #button:hover{
+            background-color: orange;
+            color: white;
+            scale: 110%;
+            transition: 0.7s ease;
+        }
+        
+       /* footer */
+
+              .footer {
+  
+  color: #fff;
+  padding: 20px 0;
+}
+
+  .footer {
+            /* background-color: #000; */
+            color: #fff;
+            padding: 2rem;
+        }
+        .footer a {
+            color: #fff;
+        }
+        .footer a:hover {
+            color: #d2b48c;
+        }
+        
+     </style>
+  </head>
+ <body class="bg-dark">
+
+   <nav class="navbar navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 10;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Royal Edith</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active me-5" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-orange px-3" href="./eccomerce/all.html"  >Shop Now</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="btn btn-orange" href="Appointment.html">Book a Fitting</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <div class="container-fluid con1 ">
+
+        <div class="container mt-5 con1-1 p-0 hovercon ">
+            <div class="container p-0  ">
+                <div class="display-con">
+                    <h6 class="display-6 text-white ">
+                       Book Appointment
+                    </h2>
+
+                </div>
+                <div class="form-con">
+              <form action="https://submit-form.com/jxIcf8FxP" method="post" id="contact-form">
+            <div class="input-group mb-3 ">
+                <span class=" span input-group-text addon-1" id="basic-addon1 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="#5f6368"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                </span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required >
+              </div>
+              <!-- phone input -->
+            <div class="input-group mb-3 ">
+                <span class=" span input-group-text addon-1" id="basic-addon1 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                </span>
+                <input type="tel"  class="form-control" placeholder="Phone" aria-label="tel" aria-describedby="basic-addon1" required >
+              </div>
+
+              <!-- email inputs -->
+            <div class="input-group mb-3 ">
+                <span class=" span input-group-text addon-1" id="basic-addon1 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="#5f6368"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
+                </span>
+                <input type="tel" class="form-control" placeholder="Contact Mail" aria-label="tel" aria-describedby="basic-addon1" required >
+              </div>
+              
+     
+             
+              
+         
+              
+           
+              <div class="input-group input-group4 " >
+                <span class=" span input-group-text addon-1" style="min-height: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="28px" fill="#5f6368"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
+                </span>
+                <textarea class="form-control" aria-label="With textarea" placeholder=" Brief Reason for Appointment"></textarea>
+              </div>
+
+
+              <div class=" d-flex btn-con ">
+                <button class="btn btn-outline-primary reset   m-2" id="button" type="reset"  style="width: 30%;">Reset</button>
+                <button class="btn btn-outline-primary bttn  m-2" id="button" type="submit" id="book-appointment-button" style="width: 30%;">Send</button>
+                
+               
+              </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+      <footer class="footer bg-dark ">
+   <div class="container">
+    <div class="row">
+     <div class="col-12 col-sm-6 col-md-4 col-m-lg-3 col-xl-lg">
+      <h5>
+       My Account
+      </h5>
+      <ul class="list-unstyled">
+       <li>
+        <a href="#">
+         Book Appointment
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Register for a class
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Order History
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Wishlist
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-12 col-sm-6 col-md-4 col-m-lg-3 col-xl-lg">
+      <h5>
+       Contact
+      </h5>
+      <ul class="list-unstyled">
+       <li>
+       Jikwoyi Extension, Abuja
+       </li>
+       <li>
+        Phone: (123) 456-7890
+       </li>
+       <li>
+        Email: info@example.com
+       </li>
+      </ul>
+     </div>
+     <div class="col-12 col-sm-6 col-md-4 col-m-lg-3 col-xl-lg">
+      <h5>
+       Information
+      </h5>
+      <ul class="list-unstyled">
+       <li>
+        <a href="#">
+         About Us
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Delivery Information
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Privacy Policy
+        </a>
+       </li>
+       <li>
+        <a href="#">
+         Terms &amp; Conditions
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-12 col-sm-6 col-md-4 col-m-lg-3 col-xl-lg">
+      <h5>
+       Instagram
+      </h5>
+      <div class="row">
+       <div class="col-4">
+        <img alt="Instagram Image 1" class="img-fluid" height="100" src="https://storage.googleapis.com/a1aa/image/qXs7dLAejKXgAC1AlNilre8UsAD2dCEz40LCdPHIUE4vneJnA.jpg" width="100"/>
+       </div>
+       <div class="col-4">
+        <img alt="Instagram Image 2" class="img-fluid" height="100" src="https://storage.googleapis.com/a1aa/image/LdYlneBSCGzKU6KEx3a26fFjrs6UfylMneIa0IdSLUoWf0ncC.jpg" width="100"/>
+       </div>
+       <div class="col-4">
+        <img alt="Instagram Image 3" class="img-fluid" height="100" src="https://storage.googleapis.com/a1aa/image/fyexxXIp0RqYOU5LoDU8oCjPINDtnXPuZYWwPLNNsQJ2neJnA.jpg" width="100"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="text-center mt-4">
+     <p>
+      © Copyright 
+     </p>
+    </div>
+   </div>
+  </footer>
+    <script src="index.js">
+      
+    </script>
+ </body>
+</html>
